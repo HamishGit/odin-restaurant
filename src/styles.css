@@ -49,6 +49,7 @@
     --brown: #321C12;
     --white: #FFF;
     --bread: #E9D5BD;
+    --text-faded: hsl(0, 0%, 90%);
     --font-size-main-heading: 4rem;
     --font-size-secondary-heading: 2rem;
     --font-size-tertiary-heading: 1.5rem;
@@ -83,7 +84,7 @@ nav {
     justify-content: space-between;
 }
 
-nav .logo {
+nav .logo, footer .logo {
     width: 6rem;
 }
 
@@ -96,6 +97,14 @@ nav .logo {
     border: none;
     background: none;
     font-weight: bold;
+    padding: 20px;
+}
+
+.buttons button:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--brown);
+    text-underline-offset: 2px;
 }
 
 /* Hero Section */
@@ -136,9 +145,14 @@ nav .logo {
     border-radius: 1rem;
     padding: 0.5rem 1.1rem;
     font-size: var(--font-size-small);
-    margin-top: 1rem;
     background-color: var(--orange);
     color: white;
+}
+
+.order-now>button:hover,
+.hero .text-content button:hover {
+    background-color: white;
+    color: var(--orange);
 }
 
 .hero .text-content button {
@@ -240,4 +254,102 @@ nav .logo {
     font-size: var(--font-size-small);
     min-width: min-content;
     margin-top: 1rem;
+}
+
+.our-food .order-now:hover {
+    color: white;
+    background-color: var(--brown);
+}
+
+footer {
+    background-color: var(--brown);
+    color: white;
+    padding: 3rem 0;
+}
+
+footer hr {
+    margin: 0 3rem;
+    background-color: var(--bread);
+    border: none;
+    height: 2px;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+footer .icon {
+    width: 2rem;
+    fill: white;
+}
+
+footer>div>p {
+    padding-left: 5px;
+    margin-bottom: 0.25rem;
+}
+
+footer svg {
+    margin-right: 0.2rem;
+}
+
+.footer-section-main {
+    display: flex;
+    font-size: var(--font-size-small);
+    justify-content: space-between;
+    color: var(--text-faded);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: var(--font-size-small);
+    color: var(--text-faded);
+}
+
+main.menu>section {
+    text-align: center;
+    background-color: var(--cream);
+}
+
+.menu h1 {
+    font-size: var(--font-size-main-heading);
+    margin-bottom: 1rem;
+}
+
+.menu h2 {
+    font-size: var(--font-size-tertiary-heading)
+}
+
+.menu .food-item {
+    padding-bottom: 1rem;
+}
+
+.menu .food-item img {
+    width: 500px;
+    border-radius: 1rem;
+}
+
+.menu .food-item p {
+    width: 500px;
+    margin: auto;
+}
+
+.menu .food-item p sup {
+    font-size: var(--font-size-small);
+}
+
+main.about {
+    background-color: var(--cream);
+    text-align: center;
+}
+
+main.about>section:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+main.about h1 {
+    font-size: var(--font-size-secondary-heading);
+    text-align: center;
 }

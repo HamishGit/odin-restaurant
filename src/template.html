@@ -10,9 +10,9 @@
         <nav>
             <div class="img-container"><img src="./logo.png" alt="The Daily Bun" class="logo"></div>
             <div class="buttons">
-                <button>Home</button>
-                <button>Menu</button>
-                <button>About</button>
+                <button id="home-btn">Home</button>
+                <button id="menu-btn">Menu</button>
+                <button id="about-btn">About</button>
             </div>
             <div class="order-now">
                 <button>Order Now</button>
@@ -20,57 +20,46 @@
         </nav>
     </header>
     <main id="content">
-        <section class="hero">
-            <div class="text-content">
-                <h1>The Daily Bun</h1>
-                <h3>Good food. Great buns. Even better days.</h3>
-                <p>Welcome to The Daily Bun, your new favourite spot for seriously good burgers and unforgettable moments. We believe the best meals are made with fresh ingredients, perfectly toasted buns, juicy patties, and a whole lot of love — that's what we're about.</p>
-                <button>View Our Menu →</button>
-            </div>
-        </section>
-        <section class="info">
-            <div class="about-us">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><title>hamburger</title><path d="M22 13C22 14.11 21.11 15 20 15H4C2.9 15 2 14.11 2 13S2.9 11 4 11H13L15.5 13L18 11H20C21.11 11 22 11.9 22 13M12 3C3 3 3 9 3 9H21C21 9 21 3 12 3M3 18C3 19.66 4.34 21 6 21H18C19.66 21 21 19.66 21 18V17H3V18Z" /></svg>
-                <p class="section-header">ABOUT US</p>
-                <h3 class="section-hook">A Little Bun, <br> A Lot of Love</h3>
-                <p class="info-text">At The Daily Bun, we put our heart into every burger. We bring together fresh ingredients, bold flavours, and a welcoming atmosphere to create a place where everyone feels at home. Good food should be simple, satisfying, and always worth coming back for.</p>
-            </div>
-            <div class="our-philosophy">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><title>sprout</title><path d="M2,22V20C2,20 7,18 12,18C17,18 22,20 22,20V22H2M11.3,9.1C10.1,5.2 4,6.1 4,6.1C4,6.1 4.2,13.9 9.9,12.7C9.5,9.8 8,9 8,9C10.8,9 11,12.4 11,12.4V17C11.3,17 11.7,17 12,17C12.3,17 12.7,17 13,17V12.8C13,12.8 13,8.9 16,7.9C16,7.9 14,10.9 14,12.9C21,13.6 21,4 21,4C21,4 12.1,3 11.3,9.1Z" /></svg>
-                <p class="section-header">OUR PHILOSOPHY</p>
-                <h3 class="section-hook">Freshly Made,<br>Happily Served</h3>
-                <p class="info-text">We believe great burgers start with quality ingredients and a passion for flavour. Every order is prepared with care, every detail matters, and every visit is an opportunity to make someone's day a little better.</p>
-            </div>
-            <div class="call-to-action">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><title>emoticon-happy-outline</title><path d="M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M10,9.5C10,10.3 9.3,11 8.5,11C7.7,11 7,10.3 7,9.5C7,8.7 7.7,8 8.5,8C9.3,8 10,8.7 10,9.5M17,9.5C17,10.3 16.3,11 15.5,11C14.7,11 14,10.3 14,9.5C14,8.7 14.7,8 15.5,8C16.3,8 17,8.7 17,9.5M12,17.23C10.25,17.23 8.71,16.5 7.81,15.42L9.23,14C9.68,14.72 10.75,15.23 12,15.23C13.25,15.23 14.32,14.72 14.77,14L16.19,15.42C15.29,16.5 13.75,17.23 12,17.23Z" /></svg>
-                <p class="section-header">CALL TO ACTION</p>
-                <h3 class="section-hook">Your Next Favourite<br>Burger Awaits</h3>
-                <p class="info-text">Craving something delicious? Explore our menu, discover your new go-to burger, and let us take care of the rest.</p>
-                <figure>
-                    <blockquote>Good things come <br>between two buns</blockquote>
-                    <figcaption>— Goateese</figcaption>
-                </figure>
-            </div>
-        </section>
-        <section class="our-food">
-            <div class="text-content">
-                <h2>Our Food</h2>
-                <p>From classic favourites to bold new flavours,<br> every burger is made to order with the freshest <br> ingredients and a whole lot of love.</p>
-                <button class="order-now">Explore Our Menu →</button>
-            </div>
-            <div class="image-container">
-                <img src="./classic-cheeseburger.jpg" alt="Classic Cheeseburger">
-                <p>Classic Cheeseburger</p>
-            </div>
-            <div class="image-container">
-                <img src="./bbq-burger.jpg" alt="BBQ Burger">
-                <p>Spicy BBQ Burger</p>
-            </div>
-            <div class="image-container">
-                <img src="french-fries.jpg" alt="French Fries">
-                <p>French Fries</p>
-            </div>
-        </section>
     </main>
+    <footer>
+        <div class="footer-main">
+            <div class="img-container"><img src="./logo-dark.png" alt="The Daily Bun" class="logo"></div>
+            <div class="visit-us">
+                <p>Visit Us</p>
+                <div class="footer-section-main">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>map-marker</title><path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" /></svg>
+                    <div class="footer-section-text">
+                        <p>123 Burger Lane</p>
+                        <p>Los Angeles</p>
+                    </div>
+                </div>
+            </div>
+            <div class="opening-hours">
+                <p>Opening Hours</p>
+                <div class="footer-section-main">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>clock-outline</title><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" /></svg>
+                    <div class="footer-section-text">
+                        <p>Mon - Thu 11am - 10pm</p>
+                        <p>Fri - Sun 11am - 11pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="follow-us">
+                <p>Follow Us</p>
+                <div class="follow-us-main">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>instagram</title><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg>
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>facebook</title><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" /></svg>
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M19.321 5.562a5 5 0 0 1-.443-.258a6.2 6.2 0 0 1-1.137-.966c-.849-.971-1.166-1.956-1.282-2.645h.004c-.097-.573-.057-.943-.05-.943h-3.865v14.943q.002.3-.008.595l-.004.073q0 .016-.003.033v.009a3.28 3.28 0 0 1-1.65 2.604a3.2 3.2 0 0 1-1.6.422c-1.8 0-3.26-1.468-3.26-3.281s1.46-3.282 3.26-3.282c.341 0 .68.054 1.004.16l.005-3.936a7.18 7.18 0 0 0-5.532 1.62a7.6 7.6 0 0 0-1.655 2.04c-.163.281-.779 1.412-.853 3.246c-.047 1.04.266 2.12.415 2.565v.01c.093.262.457 1.158 1.049 1.913a7.9 7.9 0 0 0 1.674 1.58v-.01l.009.01c1.87 1.27 3.945 1.187 3.945 1.187c.359-.015 1.562 0 2.928-.647c1.515-.718 2.377-1.787 2.377-1.787a7.4 7.4 0 0 0 1.296-2.153c.35-.92.466-2.022.466-2.462V8.273c.047.028.672.441.672.441s.9.577 2.303.952c1.006.267 2.363.324 2.363.324V6.153c-.475.052-1.44-.098-2.429-.59" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>Good food. Great buns. Even better days.</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,66 @@
+import cheeseburger from './classic-cheeseburger.jpg';
+import frenchfries from './french-fries.jpg';
+import bbqburger from './bbq-burger.jpg';
+
+export default function LoadHomePage() {
+    const main = document.querySelector('main')
+
+    main.innerHTML = `<section class="hero">
+            <div class="text-content">
+                <h1>The Daily Bun</h1>
+                <h3>Good food. Great buns. Even better days.</h3>
+                <p>Welcome to The Daily Bun, your new favourite spot for seriously good burgers and unforgettable moments. We believe the best meals are made with fresh ingredients, perfectly toasted buns, juicy patties, and a whole lot of love — that's what we're about.</p>
+                <button>View Our Menu →</button>
+            </div>
+        </section>
+        <section class="info">
+            <div class="about-us">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><title>hamburger</title><path d="M22 13C22 14.11 21.11 15 20 15H4C2.9 15 2 14.11 2 13S2.9 11 4 11H13L15.5 13L18 11H20C21.11 11 22 11.9 22 13M12 3C3 3 3 9 3 9H21C21 9 21 3 12 3M3 18C3 19.66 4.34 21 6 21H18C19.66 21 21 19.66 21 18V17H3V18Z" /></svg>
+                <p class="section-header">ABOUT US</p>
+                <h3 class="section-hook">A Little Bun, <br> A Lot of Love</h3>
+                <p class="info-text">At The Daily Bun, we put our heart into every burger. We bring together fresh ingredients, bold flavours, and a welcoming atmosphere to create a place where everyone feels at home. Good food should be simple, satisfying, and always worth coming back for.</p>
+            </div>
+            <div class="our-philosophy">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><title>sprout</title><path d="M2,22V20C2,20 7,18 12,18C17,18 22,20 22,20V22H2M11.3,9.1C10.1,5.2 4,6.1 4,6.1C4,6.1 4.2,13.9 9.9,12.7C9.5,9.8 8,9 8,9C10.8,9 11,12.4 11,12.4V17C11.3,17 11.7,17 12,17C12.3,17 12.7,17 13,17V12.8C13,12.8 13,8.9 16,7.9C16,7.9 14,10.9 14,12.9C21,13.6 21,4 21,4C21,4 12.1,3 11.3,9.1Z" /></svg>
+                <p class="section-header">OUR PHILOSOPHY</p>
+                <h3 class="section-hook">Freshly Made,<br>Happily Served</h3>
+                <p class="info-text">We believe great burgers start with quality ingredients and a passion for flavour. Every order is prepared with care, every detail matters, and every visit is an opportunity to make someone's day a little better.</p>
+            </div>
+            <div class="call-to-action">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon"><title>emoticon-happy-outline</title><path d="M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M10,9.5C10,10.3 9.3,11 8.5,11C7.7,11 7,10.3 7,9.5C7,8.7 7.7,8 8.5,8C9.3,8 10,8.7 10,9.5M17,9.5C17,10.3 16.3,11 15.5,11C14.7,11 14,10.3 14,9.5C14,8.7 14.7,8 15.5,8C16.3,8 17,8.7 17,9.5M12,17.23C10.25,17.23 8.71,16.5 7.81,15.42L9.23,14C9.68,14.72 10.75,15.23 12,15.23C13.25,15.23 14.32,14.72 14.77,14L16.19,15.42C15.29,16.5 13.75,17.23 12,17.23Z" /></svg>
+                <p class="section-header">CALL TO ACTION</p>
+                <h3 class="section-hook">Your Next Favourite<br>Burger Awaits</h3>
+                <p class="info-text">Craving something delicious? Explore our menu, discover your new go-to burger, and let us take care of the rest.</p>
+                <figure>
+                    <blockquote>Good things come <br>between two buns</blockquote>
+                    <figcaption>— Goateese</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="our-food">
+            <div class="text-content">
+                <h2>Our Food</h2>
+                <p>From classic favourites to bold new flavours,<br> every burger is made to order with the freshest <br> ingredients and a whole lot of love.</p>
+                <button class="order-now">Explore Our Menu →</button>
+            </div>
+            <div class="image-container">
+                <img src="${cheeseburger}" alt="Classic Cheeseburger">
+                <p>Classic Cheeseburger</p>
+            </div>
+            <div class="image-container">
+                <img src="${bbqburger}" alt="BBQ Burger">
+                <p>Spicy BBQ Burger</p>
+            </div>
+            <div class="image-container">
+                <img src="${frenchfries}" alt="French Fries">
+                <p>French Fries</p>
+            </div>
+        </section>`;
+    
+    if (main.classList.contains('menu')) {
+        main.classList.remove('menu');
+    }
+    if (main.classList.contains('about')) {
+        main.classList.remove('about');
+    }
+}
