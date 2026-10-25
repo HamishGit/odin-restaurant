@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'Lilita One';
+    src: url('LilitaOne.woff2') format('woff2'),
+        url('LilitaOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('NunitoSans-12ptExtraLight.woff2') format('woff2'),
+        url('NunitoSans-12ptExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans Italic';
+    src: url('NunitoSans-12ptExtraLightItalic.woff2') format('woff2'),
+        url('NunitoSans-12ptExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src: url('Caveat-Regular.woff2') format('woff2'),
+        url('Caveat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Reset */
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    box-sizing: border-box;
+}
+
+/* Main */
+:root {
+    --cream: #F8F1E4;
+    --orange: #D84313;
+    --brown: #321C12;
+    --white: #FFF;
+    --bread: #E9D5BD;
+    --font-size-main-heading: 4rem;
+    --font-size-secondary-heading: 2rem;
+    --font-size-tertiary-heading: 1.5rem;
+    --font-size-regular: 1rem;
+    --font-size-text-content: 1.1rem;
+    --font-size-small: 0.8rem;
+    --font-family-heading: 'Lilita One';
+    --font-family-regular: 'Nunito Sans';
+    --font-family-reg-italic: 'Nunito Sans Italic';
+    --font-family-burger: 'Caveat';
+}
+
+body {
+    font-family: var(--font-family-heading);
+}
+
+/* Header Section*/
+header {
+    background-color: var(--cream);
+    min-height: 6rem;
+    padding: 0 2rem;
+}
+
+p, button {
+    font-family: var(--font-family-regular);
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    width: 6rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 3rem;
+}
+
+.buttons button {
+    border: none;
+    background: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+
+.hero {
+    background-image: url(hero-img.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 600px;
+}
+.hero h1 {
+    font-size: var(--font-size-main-heading);
+    color: var(--orange);
+}
+
+.hero h3 {
+    font-size: var(--font-size-secondary-heading);
+}
+
+.hero .text-content {
+    font-size: var(--font-size-text-content);
+    background-color: var(--bread);
+    grid-column: 1;
+    padding: 1rem;
+}
+
+.hero .text-content p {
+    line-height: 1.6;
+}
+
+.hero .text-content>* {
+    margin-bottom: 1rem;
+}
+
+.order-now>button {
+    border: 0;
+    border-radius: 1rem;
+    padding: 0.5rem 1.1rem;
+    font-size: var(--font-size-small);
+    margin-top: 1rem;
+    background-color: var(--orange);
+    color: white;
+}
+
+.hero .text-content button {
+    background-color: var(--orange);
+    color: white;
+    border: 0;
+    border-radius: 10rem;
+    padding: 1rem 2.2rem;
+    font-size: var(--font-size-secondary-heading);
+    margin-top: 2rem;
+}
+
+/* Info Section */
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--cream);
+    padding: 2rem 5rem;
+    gap: 3rem;
+}
+
+.info>div {
+    max-width: 255px;
+}
+
+.info svg.icon {
+    fill: var(--orange);
+    width: 4rem;
+    margin-bottom: 0.1rem;
+}
+
+.info .section-header {
+    color: var(--orange);
+    font-size: var(--font-size-small);
+    margin-bottom: 0.5rem;
+}
+
+.info .section-hook {
+    font-size: var(--font-size-tertiary-heading);
+    margin-bottom: 1rem;
+}
+
+.info figure {
+    margin-top: 1rem;
+}
+
+.info blockquote {
+    font-family: var(--font-family-regular);
+    font-weight: bold;
+    color: var(--orange);
+    text-align: right;
+}
+
+.info figcaption {
+    font-family: var(--font-family-reg-italic);
+    text-align: right;
+    font-size: var(--font-size-small);
+}
+
+/* Our Food Section */
+
+.our-food {
+    background-color: var(--orange);
+    color: var(--white);
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.our-food .text-content {
+    flex-grow: 0;
+}
+
+.our-food .text-content h2 {
+    font-size: var(--font-size-secondary-heading);
+    margin-bottom: 1rem;
+}
+
+.our-food .image-container {
+    text-align: center;
+}
+
+.our-food .image-container img {
+    height: 250px;
+    border-radius: 1rem;
+}
+
+.our-food .image-container p {
+    font-family: var(--font-family-burger);
+    font-size: var(--font-size-tertiary-heading);
+}
+
+.our-food .order-now {
+    border: 0;
+    border-radius: 1rem;
+    padding: 0.5rem 1.1rem;
+    font-size: var(--font-size-small);
+    min-width: min-content;
+    margin-top: 1rem;
+}
